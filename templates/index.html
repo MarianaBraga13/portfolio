@@ -16,34 +16,33 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">Mari Braga</a>
+      <a class="navbar-brand font-monospace" href="#">Sobre mim</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item font-monospace"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item font-monospace"><a class="nav-link" href="#contato">Contato</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <header class="bg-primary text-white text-center py-5">
+  <header class="text-white text-center py-5" style="background-image: url('{{ url_for('static', filename='assets/banner.png') }}'); background-size: cover; background-position: center;">
     <div class="container">
-      <h1 class="display-4">Olá, eu sou a Mari!</h1>
-      <p class="lead">Estudante de Engenharia da Computação | Dev. Python em construção 💻</p>
-      <div>
-        <img src="assets\banner.png" width="400">
-      </div>
+      <h2 class="display-4">
+        <h2 class="font-monospace">Mariana Braga Domingues</h2>
+      <p class="font-monospace">Estudante de Engenharia da Computação | Dev. Python em construção 💻</p>
     </div>
   </header>
 
   <!-- Projetos -->
   <section id="projetos" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4">Meus Projetos</h2>
+
+      <h2 class="text-center mb-4 font-monospace">Meus Projetos</h2>
       <div class="row">
         <!-- Projeto 1 -->
         <div class="col-md-6 col-lg-4 mb-4">
@@ -77,7 +76,18 @@
             </div>
           </div>
         </div>
+      
+    <!-- Projeto 4 -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Sci-AI</h5>
+          <p class="card-text">Sistema de Análise de dados utilizando scikit-learn.</p>
+          <a href="#" class="btn btn-outline-primary">Ver mais</a>
+        </div>
       </div>
+    </div>
+    </div>
 
 </section>
   
@@ -85,12 +95,14 @@
   <!-- Contato -->
   <section id="contato" class="bg-white py-5">
     <div class="container">
-      <h2 class="text-center mb-4">Fale Comigo</h2>
-      <p class="text-center">Você pode me encontrar nas redes ou me mandar um e-mail 😊</p>
+      <h3 class="text-center py-3 font-monospace">Fale Comigo</h3>
+      <p class="text-center font-monospace">Você pode me encontrar nas redes ou me mandar um e-mail 😊</p>
       <div class="d-flex justify-content-center gap-3 mt-4">
         <a href="https://github.com/MarianaBraga13" class="btn btn-dark" target="_blank"><i class="bi bi-github"></i> GitHub</a>
-        <a href="#" class="btn btn-primary"><i class="bi bi-envelope-fill"></i> E-mail</a>
+        <a href="https://www.linkedin.com/in/mariana-braga-domingues-2288a930/" class="btn btn-dark" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.gmail.com" class="btn btn-primary"><i class="bi bi-envelope-fill"></i> E-mail</a>
       </div>
+      <!-- <img src="{{ url_for('static', filename='assets/logo.png')}}" class="rounded py-5" width="100"> -->
     </div>
   </section>
 
